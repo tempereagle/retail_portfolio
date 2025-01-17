@@ -277,7 +277,7 @@ nav a:hover{
 
 
 .banner-image{
-    background-image: url(/img/generator_cord.jpg);
+    background: url(img/generator_cord.jpg);
     background-repeat:no-repeat;
     background-size: cover;
     background-position:right bottom;
@@ -301,7 +301,7 @@ nav a:hover{
 }
 
 .banner-image-b{
-    background: url(/img/Extension_cord.jpg);
+    background: url(img/Extension_cord.jpg);
     background-repeat:no-repeat;
     background-size: cover;
     background-position:center;
@@ -313,7 +313,7 @@ nav a:hover{
 
 /*PRODUCT C*/
 .banner-image-c{
-    background: url(/img/all\ weather.jpg);
+    background: url(img/all\ weather.jpg);
     background-repeat:no-repeat;
     background-size: cover;
     background-position:center;
