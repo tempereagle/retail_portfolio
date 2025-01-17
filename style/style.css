@@ -277,7 +277,7 @@ nav a:hover{
 
 
 .banner-image{
-    background: url(/img/generator_cord.jpg);
+    background-image: url(/img/generator_cord.jpg);
     background-repeat:no-repeat;
     background-size: cover;
     background-position:right bottom;
