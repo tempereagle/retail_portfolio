@@ -1,0 +1,732 @@
+:root{
+    --primary-color: rgb(255,205,17);
+    --secondary-color: #838282;
+    --overaly-color: rgba(0,0,0, 0.7); 
+
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    text-decoration: none;
+}
+
+@font-face {
+    src: url(/fonts/Univers-CondensedBold.ttf) format("truetype");
+    font-family: Cat-bold;
+}
+
+@font-face {
+    src: url(/fonts/Univers-CondensedLight.otf) format("truetype");
+    font-family: Cat-light;
+}
+@font-face {
+    src: url(/fonts/Univers-Condensed.otf) format("truetype");
+    font-family: Cat-condensed;
+}
+
+body{
+    font-family: Cat-light, Arial, "Arial Narrow bold",Arial,sans-serif;
+    line-height: 1.6;
+    font-size: 14px;
+    background-color: var(--primary-color);
+}
+
+.bold-paragraph{
+    font-family: Cat-bold, Arial, "Arial Narrow bold",Arial,sans-serif;
+    font-size: 1.17rem;
+}
+
+
+h1,h2,h3,h4{
+    line-height: 1.3;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    width: 90%;
+}
+
+.product-title h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Cat-bold, Arial, "Arial Narrow bold",Arial,sans-serif;
+    font-size: 2.5em;
+
+}
+
+.container{
+    margin: auto;
+    padding: 0 1rem;
+
+}
+
+.product-container{
+    margin: auto;
+    overflow: hidden;
+    padding: 0 1rem;
+}
+
+
+
+
+a{
+    font-family: Cat-bold, Arial, "Arial Narrow bold",Arial,sans-serif;
+    font-size: 20px;
+    color: #000000;
+}
+
+.product-text{
+    margin: 0 auto;
+    text-align: justify;
+    width: 300px;
+    
+}
+
+
+/*NAV*/
+
+.logo{
+    width: 125px;
+    padding-top: 10px;
+    display: inline-block;
+    
+}
+
+header{
+    background: #fff;
+    text-align: center;
+    z-index: 999;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    padding-top: 10px;
+    padding-bottom: 1px;
+}
+
+
+
+
+.nav-toggle{
+    display: none;
+}
+
+.nav-toggle-label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #000;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::after,
+.nav-toggle-label span::before{
+    display: block;
+    background: #000;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+}
+
+.nav-toggle-label span::after,
+.nav-toggle-label span::before{
+    content: '';
+    position: absolute;
+}
+
+.nav-toggle-label span::before{
+    bottom: 7px;
+}
+
+.nav-toggle-label span::after{
+    top: 7px;
+}
+
+
+nav{
+    position: absolute;
+    text-align: left;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+    
+}
+
+nav ul{
+    list-style: none;
+}
+nav li{
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+nav a{
+    color: #000;
+    text-decoration: none;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out ;
+}
+
+nav a:hover{
+  color: #838282;  
+}
+
+.nav-toggle:checked ~ nav{
+    transform: scale(1,1)
+}
+
+.nav-toggle:checked ~ nav a{
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+
+}
+
+/*BANNER*/
+
+.banner{
+    background: url(/img/Cat_cord.JPG) no-repeat  center/cover;
+    height: 75vh;
+    margin-top: 20px;
+
+}
+
+.section-text{
+    text-align: center;
+    color: #fff;
+
+}
+
+.section-text h1{
+    font-family: Cat-bold, Arial, "Arial Narrow bold",Arial,sans-serif;
+    font-size: 75px;
+    color:#fff;
+    text-shadow: 0 1px 0 #000;
+    line-height: .95;
+    padding-top: 0.3em;
+
+}
+
+.section-text h1 span{
+    font-size: 13px;
+    vertical-align: 40px;
+    margin-left: 5px;
+
+}
+
+.section-text h1.side-text{
+    padding: 6em 0 0;
+    font-family: Cat-condensed, Arial, "Arial Narrow bold",Arial,sans-serif;
+    font-size: 19px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 #000;
+
+    
+
+}
+/*PRODUCT A*/
+.grid{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-a .grid-2col{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-a{
+    background-color: var(--primary-color);
+    overflow: hidden;
+    vertical-align: bottom; 
+    border-bottom: 2px solid var(--primary-color);
+    z-index: -99;  
+
+}
+
+.grid img{   
+  padding-top: 2em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid-2col img{   
+  padding-top: 2em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+.banner-image{
+    background: url(/img/generator_cord.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:right bottom;
+    background-color: var(--primary-color);
+    height: 50vh;
+
+
+
+}
+
+/*PRODUCT B*/
+
+.product-b{
+    background-color: var(--primary-color);
+    overflow: hidden;
+    border-top: 5px solid #fff;
+    border-bottom: 2px solid var(--primary-color); 
+    z-index: -99; 
+
+
+}
+
+.banner-image-b{
+    background: url(/img/Extension_cord.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-color: var(--primary-color);    
+    height: 50vh;
+
+}
+
+
+/*PRODUCT C*/
+.banner-image-c{
+    background: url(/img/all\ weather.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-color: var(--primary-color); 
+    height: 50vh;
+
+}
+
+
+/*FOOTER*/
+footer{
+    background-color: #000;
+    color: #fff;
+}
+
+.container-footer{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrapper > *{
+    padding: 1em;
+}
+
+.company-info{
+    background: #000;
+   
+}
+
+.company-info h3, .company-info ul{
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.contact{
+  background: var(--primary-color);
+  border-top: 5px solid #fff;  
+  color: #000;
+}
+
+.company-info h3{
+    font-family: Cat-bold, Arial, "Arial Narrow bold",Arial,sans-serif;
+    color: var(--primary-color);
+    font-size: 2.5em;
+}
+
+
+.company-info span{
+ font-size: 13px;
+    vertical-align: 15px;
+    margin-left: 5px;
+}
+.company-info li{
+    font-size: 20px;
+    margin-bottom: 15px;
+
+}
+
+.company-info li i{
+    color: var(--primary-color);
+}
+.company-info a{
+    color: #fff;
+    font-family: Cat-light, Arial, "Arial Narrow bold",Arial,sans-serif;
+    line-height: 1.6;
+    font-size: 20px;
+}
+
+.company-info a:hover{
+    color: var(--primary-color);
+
+}
+.copyright{
+    height: 35px;
+    background: #fff;
+    color: #000;
+    text-align: center;
+}
+/*FORM STYLES*/
+
+
+.contact h3{
+    font-family: Cat-bold, Arial, "Arial Narrow bold",Arial,sans-serif;
+    font-size: 1.5rem;
+    padding-bottom: 1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contact form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.contact form label{
+    display: block;
+
+}
+
+.contact form p{
+    margin: 0;
+    font-size: 22px;
+}
+
+.contact form .full{
+    grid-column: 1 / 3;
+}
+
+.contact form button, .contact form input, .contact form textarea{
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #000;
+}
+
+.contact form button{
+    background: #3a3939;
+    border: 0;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.contact form button:hover,.contact form button:focus{
+    background: #838282;
+    outline: 0;
+    transition: background-color 0.7s ease-out;
+}
+.alert{
+    text-align: center;
+    padding: 10px;
+    background: #A70E12;
+    color: #fff;
+    margin-bottom: 10px;
+    display: none;
+}
+
+/*Utilities*/
+.border-top{
+    margin-top: -3.7em;
+    height: 56px;
+    background: url(/img/border.png);
+    background-repeat:repeat-x;
+    z-index: 99;
+    vertical-align: bottom; 
+
+}
+
+.border-top-2{
+    margin-top: -4em;
+    height: 56px;
+    background: url(/img/border.png);
+    background-repeat:repeat-x;
+
+    z-index: 99;
+
+}
+
+.border-bottom{
+
+    height: 57px;
+    background: url(/img/border-top.png);
+    background-repeat:repeat-x;
+    width: 100%;
+    z-index: 99;
+    vertical-align: top; 
+
+}
+
+
+
+.grid-2col .border-black{
+    margin: 0 auto;
+    display: block;
+}
+
+@media screen and (min-width: 500px){
+.product-a .grid-2col, .grid{
+    display: grid;
+    grid-template-columns: 400px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+}
+
+
+@media screen and (min-width: 800px){
+
+   
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+.border-top h2{
+    font-size: 3.5rem;
+    padding-top: 1em;
+    text-align: center;
+    
+}
+.section-text h1.side-text{
+    max-width: 1100px;
+    font-size: 3rem;
+    padding-top: 3em;
+    margin-top: -0.35em;
+    text-align: center;
+    font-family: Cat-light, Arial, "Arial Narrow bold",Arial,sans-serif;
+ 
+}
+
+
+
+.section-text h1{
+    padding: 0 .50em 0;
+    max-width: 1100px;
+    font-size: 8rem;
+    text-align: center;
+    margin: 0 auto;
+    text-shadow: 0 1px 0 #000;
+
+}
+
+.section-text h1 span{
+    font-size: 26px;
+    vertical-align: 75px;
+    letter-spacing: 10px;
+    margin-left: 10px;
+
+}
+
+.product-title h2{
+    font-size: 4em;
+}
+
+/*PRODUCT A*/
+
+.product-a{
+    background-color: var(--primary-color);
+    overflow: hidden;
+    padding-top: 3rem;
+}
+
+.product-a .grid-2col {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+    
+.grid-2col img{
+    padding-top: 4rem;
+    width: 400px;
+    display: inline-block;
+
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-gap: 45px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.grid-2col{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+
+}
+
+
+.grid img{
+    padding-top: 4rem;
+    width: 400px;
+    display: inline-block;
+   
+}
+
+
+
+ .banner-image{
+    background: url(/img/generator_cord.jpg) no-repeat  center/cover;
+    width: 100%;
+    height: 60vh;
+    z-index: -99;
+    padding-bottom: 10px;
+}
+
+/*PRODUCT b*/
+
+.product-b{
+    background-color: var(--primary-color);
+    overflow: hidden;
+    padding-top: 3rem;
+}
+/*
+.product-grid-2{
+    display: grid;
+    grid-template-columns: 400px 300px   ;
+    grid-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+*/
+/*CONTACT FORM*/
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border-top: 5px solid #fff;  
+
+}
+.wrapper > *{
+    padding: 2em;
+}
+
+.company-info h3, .company-info ul, .brand{
+    text-align: left;
+}
+.contact{
+  border-top: 0px;  
+}
+
+}
+
+@media screen and (min-width: 1160px){
+
+    /*NAV*/
+
+   .nav-toggle-label{
+        display: none;
+    }
+
+    header{
+        display: grid;
+        grid-template-columns: 1fr auto minmax(600px, 4fr) 1fr;
+        position: relative;
+    }
+
+    
+
+    .logo{
+    grid-column: 2 / 3;
+    padding: .75em 0;
+    margin-top: 1em;
+}
+    
+
+     nav {
+    all: unset; /* this causes issues with Edge, since it's unsupported */
+    
+    /* the following lines are not from my video, but add Edge support */
+    position: relative;
+    text-align: left;
+    transition: none;
+    transform: scale(1,1);
+    background: none;
+    top: initial;
+    left: initial;
+    /* end Edge support stuff */
+    
+    grid-column: 3 / 4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+
+    nav ul{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    nav li{
+        margin-left: 3em;
+        margin-bottom: 0; 
+    }
+    nav a{
+        opacity: 1;
+        position: relative;
+    }
+
+    nav a:hover{
+        color: #838282;
+    }
+
+
+
+}
+@media screen and (min-width: 1400px){
+
+
+.product-a .grid-2col{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    margin-left: 3%;
+    margin-right: 3%;
+
+}
+
+}
+@media screen and (min-width: 1475px){
+.two-col-img-two{
+    padding-left: 75px;
+}
+
+}
+/*END OF NAV*/
