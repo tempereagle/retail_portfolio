@@ -289,7 +289,7 @@ nav a:hover {
 
 
 .banner-image {
-    background: url(/img/generator_cord.jpg);
+    background: url(img/generator_cord.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right bottom;
@@ -315,7 +315,7 @@ nav a:hover {
 }
 
 .banner-image-b {
-    background: url(/img/Extension_cord.jpg);
+    background: url(img/Extension_cord.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -328,7 +328,7 @@ nav a:hover {
 
 /*PRODUCT C*/
 .banner-image-c {
-    background: url(/img/all\ weather.jpg);
+    background: url(img/all\ weather.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -478,7 +478,7 @@ footer {
 .border-top {
     margin-top: -3.7em;
     height: 56px;
-    background: url(/img/border.png);
+    background: url(img/border.png);
     background-repeat: repeat-x;
     z-index: 99;
     vertical-align: bottom;
@@ -488,7 +488,7 @@ footer {
 .border-top-2 {
     margin-top: -4em;
     height: 56px;
-    background: url(/img/border.png);
+    background: url(img/border.png);
     background-repeat: repeat-x;
 
     z-index: 99;
@@ -498,7 +498,7 @@ footer {
 .border-bottom {
 
     height: 57px;
-    background: url(/img/border-top.png);
+    background: url(img/border-top.png);
     background-repeat: repeat-x;
     width: 100%;
     z-index: 99;
@@ -629,7 +629,7 @@ footer {
 
 
     .banner-image {
-        background-image: url(/img/generator_cord.jpg);
+        background-image: url(img/generator_cord.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
