@@ -199,7 +199,7 @@ nav a:hover{
 /*BANNER*/
 
 .banner{
-    background-image: url(/img/Cat_cord.JPG);
+    background-image: url(./img/Cat_cord.JPG);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -610,7 +610,7 @@ footer{
 
 
  .banner-image{
-    background-image: url(/img/generator_cord.jpg);
+    background-image: url(img/generator_cord.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
