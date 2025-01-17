@@ -108,7 +108,7 @@ header {
     background: #fff;
     text-align: center;
     z-index: 999;
-    position: absolute;
+    position: sticky;
     width: 100%;
     top: 0;
     padding-top: 10px;
@@ -704,7 +704,7 @@ footer {
     header {
         display: grid;
         grid-template-columns: 1fr auto minmax(600px, 4fr) 1fr;
-        position: relative;
+        position: sticky;
     }
 
 
