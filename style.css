@@ -291,7 +291,6 @@ nav a:hover {
     background: url(img/generator_cord.jpg);
     background-size: cover;
     background-position: -75rem;
-
     background-color: var(--primary-color);
     height: 50vh;
 
