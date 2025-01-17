@@ -199,7 +199,7 @@ nav a:hover{
 /*BANNER*/
 
 .banner{
-    background: url(/img/Cat_cord.JPG) no-repeat  center/cover;
+    background: url(./img/Cat_cord.JPG) no-repeat  center/cover;
     height: 75vh;
     margin-top: 20px;
 
