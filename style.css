@@ -210,7 +210,6 @@ nav a:hover {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     height: 75vh;
     margin-top: 20px;
 
@@ -292,8 +291,7 @@ nav a:hover {
     background: url(img/generator_cord.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: right bottom;
-    background-attachment: fixed;
+    background-position: -75rem;
 
     background-color: var(--primary-color);
     height: 50vh;
@@ -320,7 +318,6 @@ nav a:hover {
     background-size: cover;
     background-position: center;
     background-color: var(--primary-color);
-    background-attachment: fixed;
     height: 50vh;
 
 }
@@ -331,7 +328,7 @@ nav a:hover {
     background: url(img/all\ weather.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-position: center;
     background-color: var(--primary-color);
     height: 50vh;
 
@@ -626,19 +623,31 @@ footer {
 
     }
 
+    .banner {
+
+        background-attachment: fixed;
+
+
+    }
 
 
     .banner-image {
-        background-image: url(img/generator_cord.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+
         background-attachment: fixed;
+        background-position: right bottom;
 
         width: 100%;
         height: 60vh;
         z-index: -99;
         padding-bottom: 10px;
+    }
+
+    .banner-image-b {
+        background-attachment: fixed;
+    }
+
+    .banner-image-c {
+        background-attachment: fixed;
     }
 
     /*PRODUCT b*/
@@ -703,6 +712,7 @@ footer {
         padding: .75em 0;
         margin-top: 1em;
     }
+
 
 
     nav {
