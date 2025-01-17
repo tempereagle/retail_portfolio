@@ -610,7 +610,7 @@ footer{
 
 
  .banner-image{
-    background-image: url(img/generator_cord.jpg);
+    background-image: url(/img/generator_cord.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
