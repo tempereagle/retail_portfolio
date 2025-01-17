@@ -632,6 +632,7 @@ footer {
 
 
     .banner-image {
+        background: url(img/generator_cord.jpg);
 
         background-attachment: fixed;
         background-position: right bottom;
